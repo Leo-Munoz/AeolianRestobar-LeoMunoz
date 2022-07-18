@@ -1,0 +1,158 @@
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+
+
+/*REGLAS GENERALES*/
+
+html{ background-color: black; height: 100%;}
+
+body{height: 100%;}
+
+img{ max-width: 100%; max-height: 100%;}
+
+p{font-family: 'montserrat',sans-serif;}
+
+a {color: white;} :any-link{text-decoration: none;}
+
+.logoHome{ height: 9rem;}
+.logoPage{ height: 8rem;}
+
+header{
+    display: flex;
+    align-items: center ;
+    justify-content:space-around;
+}
+
+/* CARACTERISTICAS DE LOS FONDOS*/
+.fondoHome{
+    background-image: url(../img/home.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+
+.fondoBarra{
+    background-image: url(../img/barra.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+.fondoContacto{
+    background-image: url(../img/contacto.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+.fondoParaPicar{
+    background-image: url(../img/paraPicar.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+.fondoPlatos{
+    background-image: url(../img/platos.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+.fondoShows{
+    background-image: url(../img/shows.png);
+    background-position: center;
+    background-size: cover; height: 97%;}
+
+nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'montserrat',sans-serif;
+}
+
+.pageTitulo{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'montserrat',sans-serif;
+}
+
+.botonNav{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 2rem;
+    font-weight: bold;
+    box-shadow: 1px 1px whitesmoke;
+    text-align: center;
+}
+
+.tituloCarrusel{
+    font-size: large;
+    font-weight: bold;
+}
+
+.carrusel{
+    color: white;
+    display: grid;
+    grid-template-areas: "flechaAtras producto1 flechaAdelante";
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.flechaAtras{grid-area: flechaAtras;}
+.flechaAdelante{grid-area: flechaAdelante;}
+.producto1{grid-area: producto1;}
+.producto2{grid-area: producto2; display: none;}
+.producto3{grid-area: producto3; display: none;}
+
+div section div{
+    border-radius: 1rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+.formulario{
+    width: 520px;
+    background-color: black;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* -- M E D I A   Q U E R I E S -- */
+
+@media screen and (min-width:600px)
+{    
+    .logoHome   {height: 12rem;}
+    .logoPage   {height: 12rem;}
+    .pageTitulo {font-size: 5rem;}
+
+    .carrusel   {grid-template-areas:
+    "flechaAtras producto1 producto2 flechaAdelante";
+                padding: 3rem;}
+    .producto2  {display: block;
+                grid-area: producto2;}
+
+    footer      {text-align: end;}
+}
+
+@media screen and (min-width:1024px)
+{ 
+    .logoHome   {height: 16rem;}
+    .logoPage   {height: 13rem;}
+    .pageTitulo {font-size: 4rem;}
+
+    .carrusel   {grid-template-areas:
+    "flechaAtras producto1 producto2 producto3 flechaAdelante";
+                padding: 3rem;}
+    .producto2  {display: block;
+                grid-area: producto2;}                
+    .producto3  {display: block;
+                grid-area: producto3;}
+}
