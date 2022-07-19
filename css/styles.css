@@ -62,6 +62,11 @@ nav{
     font-family: 'montserrat',sans-serif;
 }
 
+nav ul li:hover{
+    color:yellow;
+    text-shadow: 5px black;
+}
+
 .pageTitulo{
     text-align: center;
     font-size: 3rem;
