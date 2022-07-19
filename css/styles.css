@@ -57,14 +57,18 @@ nav{
     flex-direction: column;
     text-align: center;
     font-size: 4rem;
-    color: white;
+    color: black;
     text-shadow: 2px 2px black;
     font-family: 'montserrat',sans-serif;
 }
 
-nav ul li:hover{
-    color:yellow;
-    text-shadow: 5px black;
+div nav ul li a:hover{
+    transition:all 0.5s;
+    font-size: 5rem;
+    border-color: white;
+    padding: 0.4rem;
+    box-shadow: 3px 3px 3px 3px whitesmoke;
+    border-radius: 2rem;
 }
 
 .pageTitulo{
