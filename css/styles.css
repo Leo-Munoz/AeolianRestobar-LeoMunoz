@@ -2,7 +2,6 @@
     padding: 0px;
     box-sizing: border-box;}
 
-
 /*REGLAS GENERALES*/
 
 html{ background-color: black; height: 100%;}
@@ -10,17 +9,16 @@ html{ background-color: black; height: 100%;}
 body{height: 100%;}
 
 img{ max-width: 100%; max-height: 100%;}
-
-p{font-family: 'montserrat',sans-serif;}
-
+p { color: white;}
 a {color: white;} :any-link{text-decoration: none;}
+ul{list-style: none;}
 
 .logoHome{ height: 9rem;}
-.logoPage{ height: 8rem;}
+.logoPage{ height: 7rem;}
 
 header{
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content:space-around;
 }
 
@@ -52,19 +50,18 @@ header{
     background-size: cover; height: 97%;}
 
 nav{
-    list-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black;
     text-shadow: 2px 2px black;
-    font-family: 'montserrat',sans-serif;
 }
 
 div nav ul li a:hover{
+    color: yellow;
     transition:all 0.5s;
-    font-size: 5rem;
+    font-size: 4rem;
     border-color: white;
     padding: 0.4rem;
     box-shadow: 3px 3px 3px 3px whitesmoke;
@@ -76,7 +73,6 @@ div nav ul li a:hover{
     font-size: 3rem;
     color: white;
     text-shadow: 2px 2px black;
-    font-family: 'montserrat',sans-serif;
 }
 
 .botonNav{
@@ -94,14 +90,16 @@ div nav ul li a:hover{
     font-weight: bold;
 }
 
-.carrusel{
-    color: white;
-    display: grid;
-    grid-template-areas: "flechaAtras producto1 flechaAdelante";
-    padding: 1rem;
+.container{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    background-color: black;
+    padding: 3vh;
     text-align: center;
     align-items: center;
-    column-gap: 1rem;
+    border-radius: 3vh;
 }
 
 .flechaAtras{grid-area: flechaAtras;}
@@ -110,11 +108,10 @@ div nav ul li a:hover{
 .producto2{grid-area: producto2; display: none;}
 .producto3{grid-area: producto3; display: none;}
 
-div section div{
-    border-radius: 1rem;
-    background-color: black;
-    padding: 1rem;
-}
+.carousel {
+ width:300px;
+ height:300px;
+ }
 
 .formulario{
     width: 520px;
@@ -137,31 +134,14 @@ footer{
 /* -- M E D I A   Q U E R I E S -- */
 
 @media screen and (min-width:600px)
-{    
-    .logoHome   {height: 12rem;}
-    .logoPage   {height: 12rem;}
+{   .logoHome   {height: 12rem;}
+    .logoPage   {height: 8rem;}
     .pageTitulo {font-size: 5rem;}
-
-    .carrusel   {grid-template-areas:
-    "flechaAtras producto1 producto2 flechaAdelante";
-                padding: 3rem;}
-    .producto2  {display: block;
-                grid-area: producto2;}
-
     footer      {text-align: end;}
 }
 
 @media screen and (min-width:1024px)
-{ 
-    .logoHome   {height: 16rem;}
-    .logoPage   {height: 13rem;}
+{   .logoHome   {height: 16rem;}
+    .logoPage   {height: 10rem;}
     .pageTitulo {font-size: 4rem;}
-
-    .carrusel   {grid-template-areas:
-    "flechaAtras producto1 producto2 producto3 flechaAdelante";
-                padding: 3rem;}
-    .producto2  {display: block;
-                grid-area: producto2;}                
-    .producto3  {display: block;
-                grid-area: producto3;}
 }
