@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  background-color: black;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+ul {
+  list-style: none; }
+
+p {
+  color: white; }
+
+a {
+  color: white; }
+
+:any-link {
+  text-decoration: none; }
+
+.fondoHome {
+  background-image: url(../img/home.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+.fondoBarra {
+  background-image: url(../img/barra.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+.fondoContacto {
+  background-image: url(../img/contacto.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+.fondoParaPicar {
+  background-image: url(../img/paraPicar.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+.fondoPlatos {
+  background-image: url(../img/platos.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+.fondoShows {
+  background-image: url(../img/shows.png);
+  background-position: center;
+  background-size: cover;
+  height: 97%; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3.5rem;
+  color: black;
+  text-shadow: 2px 2px black; }
+
+div nav ul li a:hover {
+  color: yellow;
+  transition: all 0.5s;
+  font-size: 4rem;
+  border-color: white;
+  padding: 0.4rem;
+  box-shadow: 3px 3px 3px 3px whitesmoke;
+  border-radius: 2rem; }
+
+.logoHome {
+  height: 9rem; }
+
+.logoPage {
+  height: 7rem; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.botonNav {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px whitesmoke;
+  text-align: center; }
+
+.pageTitulo {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px black; }
+
+.formulario {
+  width: 520px;
+  background-color: black;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  text-align: center; }
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden; }
+
+.tituloCarrusel {
+  font-size: large;
+  font-weight: bold; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.carousel-item {
+  background-color: black;
+  padding: 3vh;
+  text-align: center;
+  align-items: center;
+  border-radius: 3vh; }
+
+.carousel {
+  width: 300px;
+  height: 300px; }
+
+.flechaAtras {
+  grid-area: flechaAtras; }
+
+.flechaAdelante {
+  grid-area: flechaAdelante; }
+
+.producto1 {
+  grid-area: producto1; }
+
+.producto2 {
+  grid-area: producto2;
+  display: none; }
+
+.producto3 {
+  grid-area: producto3;
+  display: none; }
+
+@media screen and (min-width: 600px) {
+  .logoHome {
+    height: 12rem; }
+  .logoPage {
+    height: 8rem; }
+  .pageTitulo {
+    font-size: 5rem; }
+  footer {
+    text-align: end; } }
+
+@media screen and (min-width: 1024px) {
+  .logoHome {
+    height: 16rem; }
+  .logoPage {
+    height: 10rem; }
+  .pageTitulo {
+    font-size: 4rem; } }

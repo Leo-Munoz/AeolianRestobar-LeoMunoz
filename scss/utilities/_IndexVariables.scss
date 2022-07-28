@@ -1,0 +1,18 @@
+//VARIABLES PROPIAS DEL HOME O INDEX
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.5rem;
+    color: $color-fondo-caja;
+    text-shadow: 2px 2px black;
+}
+
+div nav ul li a:hover{
+    color: $color-texto-atencion;
+    transition:all 0.5s;
+    font-size: 4rem;
+    border-color: $color-texto-principal;
+    padding: 0.4rem;
+    box-shadow: 3px 3px 3px 3px whitesmoke;
+    border-radius: 2rem;}

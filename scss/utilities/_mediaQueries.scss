@@ -1,0 +1,13 @@
+// -- M E D I A   Q U E R I E S PARA TABLET Y DESKTOP
+@media screen and (min-width:600px)
+{   .logoHome   {height: 12rem;}
+    .logoPage   {height: 8rem;}
+    .pageTitulo {font-size: 5rem;}
+    footer      {text-align: end;}
+}
+
+@media screen and (min-width:1024px)
+{   .logoHome   {height: 16rem;}
+    .logoPage   {height: 10rem;}
+    .pageTitulo {font-size: 4rem;}
+}

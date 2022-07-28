@@ -1,0 +1,28 @@
+//CARACTERISTICAS CARRUSEL PRODUCTOS
+.tituloCarrusel{
+    font-size: large;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    background-color: $color-fondo-caja;
+    padding: 3vh;
+    text-align: center;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.carousel {
+    width:300px;
+    height:300px;
+    }
+
+.flechaAtras{grid-area: flechaAtras;}
+.flechaAdelante{grid-area: flechaAdelante;}
+.producto1{grid-area: producto1;}
+.producto2{grid-area: producto2; display: none;}
+.producto3{grid-area: producto3; display: none;}
