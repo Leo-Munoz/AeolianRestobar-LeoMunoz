@@ -1,8 +1,14 @@
-    //REGLAS GENERALES DEL SITIO WEB
-*{margin: 0px; padding: 0px;box-sizing: border-box; }
-html{ background-color: $color-fondo-caja; height: 100%;}
-body{height: 100%;}
-img{ max-width: 100%; max-height: 100%;}
+@import "base/maps";
+/*REGLAS GENERALES DEL SITIO WEB*/
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+html{
+    background-color: $color-fondo-caja;
+    height: map-get($map: $variablesComunes, $key: medidaComun1);}
+body{
+    height: map-get($map: $variablesComunes, $key: medidaComun1);}
+img{
+    max-width: map-get($map: $variablesComunes, $key: medidaComun1);
+    max-height: map-get($map: $variablesComunes, $key: medidaComun1);}
 ul{list-style: none;}
 p { color: $color-texto-principal;}
 a {color: $color-texto-principal;}

@@ -1,3 +1,4 @@
+/*REGLAS GENERALES DEL SITIO WEB*/
 * {
   margin: 0px;
   padding: 0px;
@@ -26,59 +27,48 @@ a {
 :any-link {
   text-decoration: none; }
 
-.fondoHome {
-  background-image: url(../img/home.png);
+/* CARACTERISTICAS DE LAS IMAGENES DE FONDO CON EXTEND*/
+.fondoHome, .fondoBarra, .fondoContacto, .fondoParaPicar, .fondoPlatos, .fondoShows {
   background-position: center;
   background-size: cover;
   height: 97%; }
+
+.fondoHome {
+  background-image: url(../img/home.png); }
 
 .fondoBarra {
-  background-image: url(../img/barra.png);
-  background-position: center;
-  background-size: cover;
-  height: 97%; }
+  background-image: url(../img/barra.png); }
 
 .fondoContacto {
-  background-image: url(../img/contacto.png);
-  background-position: center;
-  background-size: cover;
-  height: 97%; }
+  background-image: url(../img/contacto.png); }
 
 .fondoParaPicar {
-  background-image: url(../img/paraPicar.png);
-  background-position: center;
-  background-size: cover;
-  height: 97%; }
+  background-image: url(../img/paraPicar.png); }
 
 .fondoPlatos {
-  background-image: url(../img/platos.png);
-  background-position: center;
-  background-size: cover;
-  height: 97%; }
+  background-image: url(../img/platos.png); }
 
 .fondoShows {
-  background-image: url(../img/shows.png);
-  background-position: center;
-  background-size: cover;
-  height: 97%; }
+  background-image: url(../img/shows.png); }
 
-nav {
+/*VARIABLES PROPIAS DEL HOME O INDEX CON NESTING*/
+div nav {
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 3.5rem;
   color: black;
   text-shadow: 2px 2px black; }
+  div nav ul li a:hover {
+    color: yellow;
+    transition: all 0.5s;
+    font-size: 4rem;
+    border-color: white;
+    padding: 0.4rem;
+    box-shadow: 3px 3px 3px 3px whitesmoke;
+    border-radius: 2rem; }
 
-div nav ul li a:hover {
-  color: yellow;
-  transition: all 0.5s;
-  font-size: 4rem;
-  border-color: white;
-  padding: 0.4rem;
-  box-shadow: 3px 3px 3px 3px whitesmoke;
-  border-radius: 2rem; }
-
+/*VARIABLES Y ESTILOS DE DIFERENTES COMPONENTES*/
 .logoHome {
   height: 9rem; }
 
@@ -121,6 +111,7 @@ footer {
   width: 100%;
   overflow: hidden; }
 
+/*CARACTERISTICAS CARRUSEL PRODUCTOS*/
 .tituloCarrusel {
   font-size: large;
   font-weight: bold; }
@@ -130,9 +121,9 @@ footer {
   justify-content: center; }
 
 .carousel-item {
+  text-align: center;
   background-color: black;
   padding: 3vh;
-  text-align: center;
   align-items: center;
   border-radius: 3vh; }
 
@@ -157,6 +148,7 @@ footer {
   grid-area: producto3;
   display: none; }
 
+/*M E D I A   Q U E R I E S PARA TABLET Y DESKTOP*/
 @media screen and (min-width: 600px) {
   .logoHome {
     height: 12rem; }

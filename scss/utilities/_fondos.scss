@@ -1,25 +1,21 @@
-// CARACTERISTICAS DE LAS IMAGENES DE FONDO
+/* CARACTERISTICAS DE LAS IMAGENES DE FONDO CON EXTEND*/
+@import "base/extend";
+
 .fondoHome{
     background-image: url(../img/home.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
 .fondoBarra{
     background-image: url(../img/barra.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
 .fondoContacto{
     background-image: url(../img/contacto.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
 .fondoParaPicar{
     background-image: url(../img/paraPicar.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
 .fondoPlatos{
     background-image: url(../img/platos.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
 .fondoShows{
     background-image: url(../img/shows.png);
-    background-position: center;
-    background-size: cover; height: 97%;}
+    @extend %imagenFondo;}
