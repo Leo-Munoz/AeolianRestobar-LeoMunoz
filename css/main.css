@@ -5,10 +5,10 @@
   box-sizing: border-box; }
 
 html {
-  background-color: black;
   height: 100%; }
 
 body {
+  background-color: black;
   height: 100%; }
 
 img {
@@ -31,7 +31,7 @@ a {
 .fondoHome, .fondoBarra, .fondoContacto, .fondoParaPicar, .fondoPlatos, .fondoShows {
   background-position: center;
   background-size: cover;
-  height: 97%; }
+  height: 100%; }
 
 .fondoHome {
   background-image: url(../img/home.png); }
@@ -60,12 +60,13 @@ div nav {
   color: black;
   text-shadow: 2px 2px black; }
   div nav ul li a:hover {
-    color: yellow;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
     font-size: 4rem;
     border-color: white;
-    padding: 0.4rem;
-    box-shadow: 3px 3px 3px 3px whitesmoke;
+    padding: 0 4rem 0 4rem;
+    box-shadow: 0px 0px 5px 5px white;
     border-radius: 2rem; }
 
 /*VARIABLES Y ESTILOS DE DIFERENTES COMPONENTES*/
@@ -83,10 +84,9 @@ header {
 .botonNav {
   margin: 1rem;
   padding: 1rem;
-  background-color: black;
   border-radius: 2rem;
   font-weight: bold;
-  box-shadow: 1px 1px whitesmoke;
+  box-shadow: 1px 1px white;
   text-align: center; }
 
 .pageTitulo {
@@ -104,49 +104,153 @@ header {
   text-align: center; }
 
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  overflow: hidden; }
+  background-color: #1e1e1e;
+  color: white;
+  bottom: 0;
+  padding: 0% 9% 2px 9%; }
+  footer p {
+    font-size: large; }
 
-/*CARACTERISTICAS CARRUSEL PRODUCTOS*/
-.tituloCarrusel {
-  font-size: large;
+/*hover de los botones RRSS*/
+footer div a img:hover {
+  transition: all 0.2s;
+  background-color: #ea0c0c;
+  border-radius: 30%; }
+
+/*CARACTERISTICAS CARRUSEL*/
+.carousel {
+  padding: 1% 9% 0% 9%;
+  border-radius: 20%; }
+
+/*CARRUSEL PLATOS*/
+.platosCarrusel {
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1e1e1e, #464646);
+  display: flex;
+  color: white;
+  align-items: center; }
+
+.textosPlatos {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%; }
+
+.imagenCarrusel {
+  border-radius: 30px 0px 0px 30px;
+  padding: 5px 15px 5px 5px;
+  height: 55vh; }
+
+/*CARRUSEL SHOWS*/
+.showsCarrusel {
+  border-radius: 50px;
+  background: linear-gradient(90deg, black, #464646);
+  display: flex;
+  color: white;
+  align-items: center; }
+
+.textosShows {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%; }
+
+.imagenShows {
+  border-radius: 30px 0px 0px 30px;
+  padding: 5px 15px 5px 5px;
+  height: 55vh; }
+
+/*GALERIA DE IMAGENES PARA SECCION BARRA*/
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 1% 9% 9% 9%; }
+
+.imagenGaleria {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0.5; }
+
+.imagenGaleria:hover {
+  opacity: 1;
+  transition: all 0.5s; }
+
+.textoImagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3vh;
+  text-shadow: 2px 1px black;
   font-weight: bold; }
 
-.container {
-  display: flex;
-  justify-content: center; }
+/*ACORDEON CARACTERISTICAS*/
+.accordion {
+  padding: 1% 9% 9% 9%; }
 
-.carousel-item {
-  text-align: center;
+.accordion-button {
   background-color: black;
-  padding: 3vh;
-  align-items: center;
-  border-radius: 3vh; }
+  color: white;
+  fill: blue; }
 
-.carousel {
-  width: 300px;
-  height: 300px; }
+.accordion-body {
+  background: linear-gradient(90deg, #1e1e1e, #646464);
+  color: white; }
 
-.flechaAtras {
-  grid-area: flechaAtras; }
+/*TABLA GRID ACORDEON*/
+.tablaAcordeon {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "item01 price01" "item02 price02" "item03 price03" "item04 price04" "item05 price05" "item06 price06" "item07 price07" "item08 price08" "item09 price09" "item10 price10"; }
 
-.flechaAdelante {
-  grid-area: flechaAdelante; }
+.item01 {
+  grid-area: item01; }
 
-.producto1 {
-  grid-area: producto1; }
+.item02 {
+  grid-area: item02; }
 
-.producto2 {
-  grid-area: producto2;
-  display: none; }
+.item03 {
+  grid-area: item03; }
 
-.producto3 {
-  grid-area: producto3;
-  display: none; }
+.item04 {
+  grid-area: item04; }
+
+.item05 {
+  grid-area: item05; }
+
+.item06 {
+  grid-area: item06; }
+
+.item07 {
+  grid-area: item07; }
+
+.price01 {
+  grid-area: price01; }
+
+.price02 {
+  grid-area: price02; }
+
+.price03 {
+  grid-area: price03; }
+
+.price04 {
+  grid-area: price04; }
+
+.price05 {
+  grid-area: price05; }
+
+.price06 {
+  grid-area: price06; }
+
+.price07 {
+  grid-area: price07; }
 
 /*M E D I A   Q U E R I E S PARA TABLET Y DESKTOP*/
 @media screen and (min-width: 600px) {
@@ -163,6 +267,6 @@ footer {
   .logoHome {
     height: 16rem; }
   .logoPage {
-    height: 10rem; }
+    height: 8rem; }
   .pageTitulo {
-    font-size: 4rem; } }
+    font-size: 6rem; } }

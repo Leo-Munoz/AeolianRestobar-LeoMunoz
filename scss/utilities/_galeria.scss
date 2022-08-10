@@ -1,0 +1,31 @@
+@import "base/variables";
+
+/*GALERIA DE IMAGENES PARA SECCION BARRA*/
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 1% 9% 9% 9% ;
+  }
+  .imagenGaleria{
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+  }
+  
+  .imagenGaleria:hover{
+    opacity: 1; 
+    transition: all 0.5s;
+  }
+  
+  .textoImagen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-texto-principal;
+    font-size: 3vh;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+  }

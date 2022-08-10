@@ -17,43 +17,92 @@
         <img src="../img/logo.png" alt="Aeolian_Logo"></div>
         <button class="botonNav"><a href="../index.html">HOME</a></button>
     </header>
-    <div class="pageTitulo">PARA PICAR</div>
+    <h1 class="pageTitulo">PARA PICAR</h1>
 
-    <section class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/iconoParaPicar.png" class="d-block w-100" alt="First slide">
-                        <p class="tituloCarrusel">PATATAS BRAVAS</p>
-                        <p class="textoCarrusel"> Patatas acompañadas de salsa picante. Su nombre viene del picante de la cayena, que es esencial en la salsa.</p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/iconoParaPicar.png" class="d-block w-100" alt="Second slide">
-                        <p class="tituloCarrusel">CALAMARES A LA ROMANA</p>
-                        <p class="textoCarrusel"> Pintados de dorado gracias a una fritura uniforme y siempre acompañados de sus indispensables rodajas de limón.</p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/iconoParaPicar.png" class="d-block w-100" alt="Third slide">
-                        <p class="tituloCarrusel">TABLA MIXTA</p> 
-                        <p class="textoCarrusel"> Queso gruyere, queso edam orégano o tradicional, aceitunas negras, aceitunas rellenas con pimiento, jamón de pavo y jamón serrano.</p>
-                    </div>
-                </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"       data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+<!-- Acordeon de Bootstrap-->
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+             <strong> TABLAS </strong>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <div class="tablaAcordeon">
+                <p class="item01"><strong>Tabla Mixta</strong> | Queso, jamón serrano, jamón de pavo, salame, huevos de codorniz, tomates cherry, choclito cocktail, palmitos y aceitunas negras rellenas.</p>
+                <p class="price01">$9.500</p>
+                <p class="item02"><strong>Tabla Quesos</strong> | Queso brie, camembert, azul, ahumado, mantecoso, suizo y de cabra, acompañado con mermelada y salsa pesto.</p>
+                <p class="price02">$10.500</p>
+                <p class="item03"><strong>Tabla Frutos Secos</strong> | Maní salado, nueces, almendras, pistachos y castañas de caju. </p>
+                <p class="price03">$7.000</p>
+                <p class="item04"><strong>Tabla Charcuteria</strong> | Jamón serrano, salame, pepperoni, prosciutto y capricullo.</p>
+                <p class="price04">$8.000</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <strong> PIZZAS </strong> &nbsp; (con base de queso mozzarella y salsa de tomate)
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                <div class="tablaAcordeon">
+                    <p class="item01"><Strong>Marinara</Strong> | Orégano, ajo, aceite de oliva y albahaca.</p>
+                    <p class="item02"><Strong>Margherita</Strong> | Albahaca, Queso mozzarella y tomate.</p>
+                    <p class="item03"><strong>Fugazza con Queso</strong> | Cebolla, mozzarella y queso parmesano.</p>
+                    <p class="item04"><strong>Pepperoni</strong> | Pepperoni y queso.</p>
+                    <p class="item05"><strong>Luigi's</strong> | Carne amarilla, salchichón del tío Lardo y piumba.</p>
+                    <p class="item06"><strong>Hawaiana</strong> | Piña y jamón.</p>
+                    <p class="item07"><strong>Napolitana</strong> | Tomate, albahaca y aceite de oliva.</p>
+                 
+                    <p class="price01">$7.500</p>
+                    <p class="price02">$9.000</p>
+                    <p class="price03">$5.000</p>
+                    <p class="price04">$6.500</p>
+                    <p class="price05">$2.000</p>
+                    <p class="price06">$7.000</p>
+                    <p class="price07">$7.000</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <strong>EMPANADAS</strong> &nbsp; (puede ser frita o al horno)
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+                <div class="tablaAcordeon">
+                    <p class="item01"><Strong>Pino</Strong></p>
+                    <p class="price01">$1.500</p>
+                    <p class="item02"><Strong>Queso</Strong></p>
+                    <p class="price02">$2.000</p>
+                    <p class="item03"><strong>Espinaca Queso</strong></p>
+                    <p class="price03">$2.500</p>
+                    <p class="item04"><strong>Queso Champiñon</strong></p>
+                    <p class="price04">$2.500</p>
+                    <p class="item05"><strong>Carne Mechada</strong></p>
+                    <p class="price05">$3.000</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
 </div>
 
-
-<footer>Aeolian RESTOBAR © TODOS LOS DERECHOS RESERVADOS</footer>
+<footer>
+    <div class="redes">
+        <a href="https://www.instagram.com/aeolianrestobar" target="_blank" rel="noopener noreferrer"> <img src="../img/instagramLogo.png" height="40px"></a>
+        <a href="https://www.facebook.com/Aeolian-Restobar-106718232144719" target="_blank" rel="noopener noreferrer"> <img src="../img/logoFacebook.png" height="40px"></a>
+    </div>
+    <p> Aeolian RESTOBAR © TODOS LOS DERECHOS RESERVADOS </p>
+</footer>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

@@ -1,0 +1,50 @@
+@import "base/variables";
+/*ACORDEON CARACTERISTICAS*/
+.accordion{
+    padding: 1% 9% 9% 9%;
+  }
+  
+  .accordion-button{
+    background-color: $color-fondo-caja;
+    color: $color-texto-principal;
+    fill: blue;
+  }
+  
+  .accordion-body{
+  background: linear-gradient(90deg,$color-fondo-caja-mas-claro,rgb(100, 100, 100));
+  color: $color-texto-principal;}
+  
+  
+    /*TABLA GRID ACORDEON*/
+    .tablaAcordeon{
+      display: grid;
+      justify-content:space-between;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto auto ; 
+      grid-template-areas: "item01 price01"
+                           "item02 price02"
+                           "item03 price03"
+                           "item04 price04"
+                           "item05 price05"
+                           "item06 price06"
+                           "item07 price07"
+                           "item08 price08"
+                           "item09 price09"
+                           "item10 price10";
+      }
+      
+      .item01{grid-area: item01;}
+      .item02{grid-area: item02;}
+      .item03{grid-area: item03;}
+      .item04{grid-area: item04;}
+      .item05{grid-area: item05;}
+      .item06{grid-area: item06;}
+      .item07{grid-area: item07;}
+      
+      .price01{grid-area: price01;}
+      .price02{grid-area: price02;}
+      .price03{grid-area: price03;}
+      .price04{grid-area: price04;}
+      .price05{grid-area: price05;}
+      .price06{grid-area: price06;}
+      .price07{grid-area: price07;}

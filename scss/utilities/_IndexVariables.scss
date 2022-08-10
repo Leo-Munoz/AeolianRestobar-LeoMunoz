@@ -1,4 +1,6 @@
 @import "base/mixin";
+@import "base/variables";
+
 /*VARIABLES PROPIAS DEL HOME O INDEX CON NESTING*/
 div nav{
     display: flex;
@@ -8,11 +10,12 @@ div nav{
     color: $color-fondo-caja;
     text-shadow: 2px 2px black;
         ul li a:hover{
-            color: $color-texto-atencion;
+            color: $color-texto-principal;
+            background-color: rgba(0, 0, 0, 0.5);
             transition:all 0.5s;
             font-size: 4rem;
             border-color: $color-texto-principal;
-            padding: 0.4rem;
-            box-shadow: 3px 3px 3px 3px whitesmoke;
+            padding: 0 4rem 0 4rem;
+            box-shadow: 0px 0px 5px 5px $color-texto-principal;
             border-radius: 2rem;}
 }

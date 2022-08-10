@@ -1,31 +1,48 @@
 @import "base/mixin";
 @import "base/maps";
+@import "base/variables";
 
-/*CARACTERISTICAS CARRUSEL PRODUCTOS*/
-.tituloCarrusel{
-    font-size: large;
-    font-weight: bold;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-}
-.carousel-item{
-    @include textCenter;
-    background-color: $color-fondo-caja;
-    padding: 3vh;
-    align-items: center;
-    border-radius: 3vh;
-}
-
+/*CARACTERISTICAS CARRUSEL*/
 .carousel {
-    width:map-get($map: $variablesComunes, $key: medidaComun2);
-    height:map-get($map: $variablesComunes, $key: medidaComun2);
-    }
+    padding: 1% 9% 0% 9%;
+    border-radius: 20%;
+  }
 
-.flechaAtras{grid-area: flechaAtras;}
-.flechaAdelante{grid-area: flechaAdelante;}
-.producto1{grid-area: producto1;}
-.producto2{grid-area: producto2; display: none;}
-.producto3{grid-area: producto3; display: none;}
+  /*CARRUSEL PLATOS*/
+
+.platosCarrusel{
+  border-radius: 30px;
+  background: linear-gradient(90deg,$color-fondo-caja-mas-claro,rgb(70, 70, 70));
+  display: flex;
+  color: $color-texto-principal;
+  align-items: center;
+ }
+
+.textosPlatos{
+ display: flex;
+ flex-direction: column;
+ padding-right: 5%;
+}
+
+.imagenCarrusel{
+    @include imagenCarrusel;
+}
+
+/*CARRUSEL SHOWS*/
+.showsCarrusel {
+  border-radius: 50px;
+  background: linear-gradient(90deg,black,rgb(70, 70, 70));
+  display: flex;
+  color: $color-texto-principal;
+  align-items: center;
+ }
+ .textosShows{
+  display: flex;
+ flex-direction: column;
+ padding-right: 5%;
+ }
+
+ .imagenShows{
+    @include imagenCarrusel;
+ }
+
