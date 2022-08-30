@@ -145,6 +145,12 @@ footer div a img:hover {
 .carousel-indicators {
   display: none; }
 
+.carousel-control-next {
+  height: 90%; }
+
+.carousel-control-prev {
+  height: 90%; }
+
 .textosPlatos {
   display: flex;
   flex-direction: column;
