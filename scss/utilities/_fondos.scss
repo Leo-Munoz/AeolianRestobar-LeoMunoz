@@ -2,20 +2,20 @@
 @import "base/extend";
 
 .fondoHome{
-    background-image: url(../img/home.png);
+    background-image: url(../img/fondo-home.png);
     @extend %imagenFondo;}
 .fondoBarra{
-    background-image: url(../img/barra.png);
+    background-image: url(../img/fondo-barra.png);
     @extend %imagenFondo;}
 .fondoContacto{
-    background-image: url(../img/contacto.png);
+    background-image: url(../img/fondo-contacto.png);
     @extend %imagenFondo;}
 .fondoParaPicar{
-    background-image: url(../img/paraPicar.png);
+    background-image: url(../img/fondo-paraPicar.png);
     @extend %imagenFondo;}
 .fondoPlatos{
-    background-image: url(../img/platos.png);
+    background-image: url(../img/fondo-platos.png);
     @extend %imagenFondo;}
 .fondoShows{
-    background-image: url(../img/shows.png);
+    background-image: url(../img/fondo-shows.png);
     @extend %imagenFondo;}

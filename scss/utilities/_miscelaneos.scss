@@ -1,38 +1,43 @@
 @import "base/mixin";
+@import "base/variables";
 /*VARIABLES Y ESTILOS DE DIFERENTES COMPONENTES*/
-.logoHome{ height: 9rem;}
-.logoPage{ height: 7rem;}
+.logoHome{
+    height: 9rem;
+    background-color: $color-fondo-caja-trans;
+    box-shadow: 20px 20px 50px 20px $color-fondo-caja-trans;
+}
+.logoPage{ height: 4rem;}
 
 header{
+    background-color: $color-fondo-caja;
     display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
+    justify-content: space-between; }
 
-.botonNav{
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 2rem;
-    font-weight: bold;
-    box-shadow: 1px 1px $color-texto-principal;
-    @include textCenter;
-}
+.nav-link{
+    color: $color-texto-principal;
+    font-size: large;  }
+  
+.nav-item-active{
+    font-weight: bolder;  }
+  
+.nav-item:hover {
+    background-color: $color-texto-atencion;
+    border-radius: 30px;
+    transition: all 0.5s;
+    text-align: center; }
 
 .pageTitulo{
     @include textCenter;
     font-size: 3rem;
     color: $color-texto-principal;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px $color-fondo-caja;
 }
 
-.formulario{
-    width: 520px;
-    background-color: $color-fondo-caja;
-    margin: auto;
-    color: $color-texto-principal;
-    font-size: 25px;
-    @include textCenter;
-}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 15%;
+  }
 
 footer{
     position:fixed;
@@ -40,18 +45,19 @@ footer{
     justify-content:space-between;
     align-items: center;
     width: 100%;
-    background-color: $color-fondo-caja-mas-claro;
+    background-color: $color-fondo-caja;
     color: $color-texto-principal;
     bottom: 0;
-    padding: 0% 9% 2px 9%;
+    padding: 0% 5% 2px 5%;;
     p{
         font-size: large;
+        text-align: center;
     }
 }
 
 /*hover de los botones RRSS*/
 footer div a img:hover{
     transition: all 0.2s;
-    background-color: rgb(234, 12, 12);
+    background-color: $color-texto-atencion;
     border-radius: 30%;
   }

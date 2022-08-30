@@ -2,12 +2,12 @@
 @import "base/variables";
 
 /*VARIABLES PROPIAS DEL HOME O INDEX CON NESTING*/
-div nav{
+div menu{
     display: flex;
+    padding-top: 15%;
     flex-direction: column;
     @include textCenter;
     font-size: 3.5rem;
-    color: $color-fondo-caja;
     text-shadow: 2px 2px black;
         ul li a:hover{
             color: $color-texto-principal;

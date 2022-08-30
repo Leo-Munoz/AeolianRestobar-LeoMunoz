@@ -1,13 +1,35 @@
+@import "base/mixin";
 /*M E D I A   Q U E R I E S PARA TABLET Y DESKTOP*/
-@media screen and (min-width:600px)
-{   .logoHome   {height: 12rem;}
-    .logoPage   {height: 8rem;}
-    .pageTitulo {font-size: 5rem;}
-    footer      {text-align: end;}
-}
+@media screen and (min-width:700px)
+{.logoHome      {height: 12rem; }
+ .pageTitulo    {font-size: 5rem; }
+  footer        {text-align: end;
+                @include padding0808; }
+  header       {@include padding0808; }
+ .imagenCarrusel{border-radius: 0px 0px 30px 30px;
+                 padding: 5px 15px 5px 5px;
+                 height: 55vh;
+                 width: fit-content; }
+ .carousel-indicators{
+                 display:flex;
+                 padding-bottom: 12%; }
+ .imagenShows   {display: unset; }
+ .textosShows   {flex-direction: column;
+                 padding: 0% 15% 0% 0%;
+                 text-align: left; }
+ .accordion     {@include padding1999; }
+  }
 
 @media screen and (min-width:1024px)
-{   .logoHome   {height: 16rem;}
-    .logoPage   {height: 8rem;}
-    .pageTitulo {font-size: 6rem;}
+{.logoHome      {height: 16rem;}
+ .logoPage      {height: 5rem;}
+ .pageTitulo    {font-size: 6rem;}
+  div menu      {padding-top: 4%;} 
+ .row           {@include padding1999; }
+ .carousel      {padding: 2% 9% 0% 9%; 
+                 margin-bottom: 50px; }
+ .platosCarrusel{flex-direction: row; }
+ .imagenCarrusel{border-radius: 30px 0px 0px 30px;}
+ .textosPlatos  {padding: 5% 10% 5% 2%; 
+                 text-align: left;}
 }

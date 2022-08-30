@@ -6,43 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Palabras Clave para Restaurant Aeolian Restobar">
     <meta name="keywords" content="RESTAURANT, RESTOBAR, BAR, ALCOHOL, BEBIDAS, TRAGOS, COMIDA, APERITIVOS, MUSICA EN VIVO, EVENTOS, COCINA, PLATOS, PIZZA, PAPAS FRITAS, TABLAS, CERVEZA, KARAOKE, BANDAS EN VIVO, AEOLIAN">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
     <title>CONTACTO Aeolian Restobar</title>
 </head>
 <body>
-<div class="fondoContacto">
+  <div class="fondoContacto">
     <header>
-        <div class="logoPage">
-        <img src="../img/logo.png" alt="Aeolian_Logo"></div>
-        <p class="botonNav"><a href="../index.html">HOME</a></p>
+      <div class="logoPage">
+        <a href="../index.html"><img src="../img/logo.png" alt="Aeolian_Logo"></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/barra.html">Barra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/paraPicar.html">Para Picar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/platos.html">Platos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/shows.html">Shows</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <div class="formulario">
-        <h1 class="pageTitulo">CONTACTO</h1>
+    <h1 class="pageTitulo">CONTACTO</h1>
+
+    <form action="" class="contacto">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="firstname" placeholder="Nombre">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="lastname" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="number" class="form-control" id="phone" placeholder="Teléfono">
+        </div>
+      </div>
         
-        <form>
-            <div class="modulo_form"><label for="nombre_apellido">Nombre: </label>
-            <input type="text" name="nombre_apellido" /></div>
-    
-            <div class="modulo_form"><label for="email">Correo: </label>
-            <input type="email" name="email" /></div>
-
-            <div class="modulo_form"><label for="number">Celular: </label>
-            <input type="tel" name="celular" /></div>
-
-            <textarea name="Comentario" id="" placeholder="Cuéntanos como podemos ayudarte..." cols="40" rows="7"></textarea>
-            
-            <div dir="rtl"><input type="reset" value="Limpiar"/>
-            <input type="submit" value="Enviar"/></div>
-        </form>
-
-    </div>
-</div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <select id="inputState" class="form-control">
+            <option>¿Cómo podemos ayudarte?</option>
+            <option>Quiero reservar una mesa</option>
+            <option>Quiero asistir a un show</option>
+            <option>Quiero consultar la carta</option>
+            <option>Quiero tocar con mi banda</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <select id="inputState" class="form-control">
+            <option selected>¿Cómo te enteraste de Aeolian Restobar?</option>
+            <option>Por Instagram</option>
+            <option>Por Facebook</option>
+            <option>Por un/a amigo/a</option>
+            <option>Buscando en Google</option>
+            <option>Pasé por fuera</option>
+            <option>Otro</option>
+          </select>
+        </div>
+      </div>
+        <div class="form-group">
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Cuéntanos más..." rows="4" ></textarea>
+          </div>
+        </div>
+      <button type="submit" class="btn btn-danger">ENVIAR</button>
+    </form>
+  </div>
 
 <footer>
     <div class="redes">
-        <a href="https://www.instagram.com/aeolianrestobar" target="_blank" rel="noopener noreferrer"> <img src="../img/instagramLogo.png" height="40px"></a>
+        <a href="https://www.instagram.com/aeolianrestobar" target="_blank" rel="noopener noreferrer"> <img src="../img/logoInstagram.png" height="40px"></a>
         <a href="https://www.facebook.com/Aeolian-Restobar-106718232144719" target="_blank" rel="noopener noreferrer"> <img src="../img/logoFacebook.png" height="40px"></a>
     </div>
     <p> Aeolian RESTOBAR © TODOS LOS DERECHOS RESERVADOS </p>
